@@ -1,0 +1,26 @@
+{
+	"couples": [
+		{
+			"name": "Silvia Rizki Ramadanti",
+			"sosmed": [
+				{ "icon": "fab fa-instagram", "link": "http://fake.com" },
+				{ "icon": "fab fa-facebook", "link": "http://fake.com" },
+				{ "icon": "fab fa-twitter", "link": "http://fake.com" }
+			],
+			"parents": ["H. Madsuki ", "Hj. Sukarsih"],
+			"thumb": "/couples/couple-female.png",
+			"address": "Kampoeng Kalapa Rt. 003 / 007 Balaraja"
+		},
+		{
+			"name": "Krisson Manie Claudio W.P.",
+			"sosmed": [
+				{ "icon": "fab fa-instagram", "link": "http://fake.com" },
+				{ "icon": "fab fa-facebook", "link": "http://fake.com" },
+				{ "icon": "fab fa-twitter", "link": "http://fake.com" }
+			],
+			"parents": ["Topan E Wijaya Kusuma ", "Ernasari Kurnianingsih"],
+			"thumb": "/couples/couple-male.png",
+			"address": "Komplek Setia Budi Sentosa Blok 12A Nomor 6 Gang Serunai Asri - Brebes, Jawa Timur"
+		}
+	]
+}
