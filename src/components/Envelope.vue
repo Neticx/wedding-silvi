@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full bg-slate-100 pt-12 pb-5">
+  <section class="w-full bg-blue-100 pt-12 pb-5">
     <section class="section-container">
       <HeaderSection title="Amplop Digital" subtitle=" Doa restu anda merupakan karunia yang sangat berarti bagi kami dan jika memberi adalah ungkapan tanda terima kasih anda, anda dapat memberi kado secara cashless"></HeaderSection>
       <section class="">
@@ -22,17 +22,17 @@ import Clipboard from '@/components/Clipboard.vue'
 
 const wallets = [
   {
-    thumb: 'wallets/mandiri.png',
+    thumb: 'wallets/bca.png',
     platform: 'Mandiri',
-    name: 'Fulanah',
-    number: '0004389203902',
+    name: 'Silvia Rizky Ramadanti',
+    number: '6565142350',
     prefix: 'rekening'
   },
   {
-    thumb: 'wallets/mandiri.png',
+    thumb: 'wallets/bca.png',
     platform: 'Mandiri',
-    name: 'Fulanah',
-    number: '8843439001940',
+    name: 'Krissonmanie Claudio Wijaya',
+    number: '7640282171',
     prefix: 'rekening'
   }
 ]

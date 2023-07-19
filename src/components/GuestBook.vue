@@ -19,8 +19,8 @@ input, textarea, select, option {
 </style>
 
 <template>
-  <section class="w-full bg-slate-100 pt-5">
-    <section class="container-section bg-slate-100">
+  <section class="w-full bg-blue-100 pt-5">
+    <section class="container-section bg-blue-100">
       <HeaderSection title="Buku Tamu" subtitle="Demi kelancaran acara dimohon untuk para tamu undangan untuk memastikan kehadirannya pada acara kami" />
       <!-- Form -->
       <form 
@@ -59,7 +59,7 @@ input, textarea, select, option {
       <!-- Gift Section -->
       <Gift></Gift>
       <!-- Message Box -->
-      <!-- <MessagesBox :messages="messages"></MessagesBox> -->
+      <MessagesBox></MessagesBox>
       <!-- Frames -->
       <div class="w-full text-center pb-12 mt-12">
         <p class="text-sm text-amber-600 font-medium">NusaInvitation &copy; 2022</p>
@@ -76,7 +76,7 @@ import axios from 'axios'
 import HeaderSection from '@/components/HeaderSection.vue'
 import Alert from '@/components/Alert.vue'
 // import Gift from '@/components/Gift.vue'
-// import MessagesBox from '@/components/MessagesBox.vue'
+import MessagesBox from '@/components/MessagesBox.vue'
 
 // Form handler
 const form = ref(null)
@@ -89,13 +89,16 @@ const statusResponse = ref(false)
 const showAlert = ref(false)
 
 //URL
-const scriptURL = "https://script.google.com/macros/s/AKfycbzPgWJ7760OwwRlvjhrBMSM9HTVJL2wjDnDB3Up9ZOEIm09LMBwpmSpkQ6eGjAPGPCH/exec"
+const scriptURL = "https://script.google.com/macros/s/AKfycbxBbmsUu1Xn37-arXLPIKwkiRKwsb2ZoM4yYoUneCaC9TAoPtJk4m9WVOq5NxmM3bE-BQ/exec"
 const sendMessage = ( evt ) => {
   evt.preventDefault()
   
   setTimeout( () => {
     // Post form
-    fetch(scriptURL, { method: 'POST', body: new FormData(form.value)})
+ 
+    fetch(scriptURL, { method: 'POST', body: new FormData(form.value), headers: {
+      'Access-Control-Allow-Origin' : 'https://script.google.com',
+        }, redirect: "follow"})
       .then( res => {
         console.log('Success: ', res)
         statusResponse.value = true

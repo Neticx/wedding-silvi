@@ -1,7 +1,7 @@
 <template>
-  <section class="container-section bg-slate-100">
+  <section class="container-section bg-blue-100">
     <HeaderSection title="Video Singkat Kami" /> 
-    <VueVideoPlayer data-aos="zoom-in" class="w-10/12 mx-auto" :src="source" />
+    <VueVideoPlayer data-aos="zoom-in" class="w-10/12 mx-auto" :src="source" autoplay="true" />
   </section>
 </template>
 
@@ -10,6 +10,6 @@
 import VueVideoPlayer from 'vue3-player-video'
 import HeaderSection from '@/components/HeaderSection.vue'
 
-const source = 'https://dl.dropbox.com/s/ggu2nnvsddf45he/Tretan%20Muslim%20_%20Luna%20Prewedding%20Video%20%28%20720%20X%201280%20%29.mp4?dl=2'
+const source = 'https://drive.google.com/uc?export=download&id=1xC6VmQowPcv059FW0JnZY4rTzzsBuFZj'
 
 </script>

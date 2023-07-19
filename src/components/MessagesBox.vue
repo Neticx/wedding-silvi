@@ -17,11 +17,23 @@
 </template>
 
 <script setup>
+import axios from 'axios'
+import { ref, onMounted } from 'vue'
 
 const props = defineProps({
   messages: {
     type: Array
   }
+})
+
+const messages = ref([])
+onMounted(() => {
+  axios.get('https://script.google.com/macros/s/AKfycbwcm-hYkRAzjHP4zWLsSIwlbaTJ_LmvjTFCYmwJEHoKcBWSZ8sUe0GzPVu0fRgtwGS0OA/exec')
+    .then( res => {
+      console.log(res.data)
+      messages.value = res.data
+    } )
+    .catch( err => alert(err) )
 })
 
 </script>
