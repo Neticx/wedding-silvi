@@ -62,7 +62,7 @@ input, textarea, select, option {
       <MessagesBox></MessagesBox>
       <!-- Frames -->
       <div class="w-full text-center pb-12 mt-12">
-        <p class="text-sm text-amber-600 font-medium">NusaInvitation &copy; 2022</p>
+        <p class="text-sm text-amber-600 font-medium">NusaInvitation &copy; 2023</p>
       </div>
     </section>
   </section>

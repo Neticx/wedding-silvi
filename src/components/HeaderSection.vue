@@ -17,7 +17,7 @@ const props = defineProps({
   }, 
   subtitle: {
     type: String,
-    default: "A simple 'I love you' means more than money."
+    default: ""
   },
   textColor: {
     type: String,

@@ -3,24 +3,20 @@
 		{
 			"name": "Silvia Rizki Ramadanti",
 			"sosmed": [
-				{ "icon": "fab fa-instagram", "link": "http://fake.com" },
-				{ "icon": "fab fa-facebook", "link": "http://fake.com" },
-				{ "icon": "fab fa-twitter", "link": "http://fake.com" }
+				{ "icon": "fab fa-instagram", "link": "https://instagram.com/sillviarizki" }
 			],
 			"parents": ["H. Madsuki ", "Hj. Sukarsih"],
-			"thumb": "/couples/couple-female.png",
-			"address": "Kampoeng Kalapa Rt. 003 / 007 Balaraja"
+			"thumb": "/couples/female.png",
+			"address": "Kampoeng Kalapa Rt. 003 / 007 Balaraja Kab. Tangerang"
 		},
 		{
 			"name": "Krisson Manie Claudio W.P.",
 			"sosmed": [
-				{ "icon": "fab fa-instagram", "link": "http://fake.com" },
-				{ "icon": "fab fa-facebook", "link": "http://fake.com" },
-				{ "icon": "fab fa-twitter", "link": "http://fake.com" }
+				{ "icon": "fab fa-instagram", "link": "https://instagram.com/oid.wp" }
 			],
 			"parents": ["Topan E Wijaya Kusuma ", "Ernasari Kurnianingsih"],
-			"thumb": "/couples/couple-male.png",
-			"address": "Komplek Setia Budi Sentosa Blok 12A Nomor 6 Gang Serunai Asri - Brebes, Jawa Timur"
+			"thumb": "/couples/male.png",
+			"address": "Kp. Namprak RT 01/04 Ds. Bantar Panjang Kec. Tigaraksa Kab. Tangerang"
 		}
 	]
 }

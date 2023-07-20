@@ -1,6 +1,6 @@
 <template>
   <section class="container-section bg-blue-100">
-    <HeaderSection title="Video Singkat Kami" /> 
+    <HeaderSection title="Video Singkat Kami" subtitle="A simple 'I love you' means more than money."/> 
     <VueVideoPlayer data-aos="zoom-in" class="w-10/12 mx-auto" :src="source" autoplay="true" />
   </section>
 </template>

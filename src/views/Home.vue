@@ -5,6 +5,7 @@
     <GroomBride></GroomBride>
     <Timelines v-on:goToGuestBook="navigationHandler('#guest-book')"></Timelines>
     <OurGallery></OurGallery>
+    <Filter></Filter>
     <Envelope id="envelope"></Envelope>
     <GuestBook id="guest-book"></GuestBook>
   </section>
@@ -19,7 +20,7 @@ import Timelines from '@/components/Timelines.vue'
 import OurGallery from '@/components/OurGallery.vue'
 import Envelope from '@/components/Envelope.vue'
 import GuestBook from '@/components/GuestBook.vue'
-
+import Filter from '@/components/Filter.vue'
 // Navigation handler
 const navigationHandler = id => {
   document.querySelector(id).scrollIntoView({
