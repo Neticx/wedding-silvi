@@ -6,9 +6,42 @@
   width: 40px;
 } 
 
-</style>>
+@keyframes backOutUp-custom-52dffe73 {
+    0% {
+        transform: scale(1);
+        opacity: 1
+    }
+
+    20% {
+        transform: translateY(0) scale(.7);
+        opacity: .7
+    }
+
+    to {
+        transform: translateY(-100%) scale(.7);
+        opacity: .7
+    }
+}
+
+.close-page {
+    -webkit-animation: backOutUp-custom-52dffe73 .5s 1s forwards;
+    animation: backOutUp-custom-52dffe73 .5s 1s forwards
+}
+
+</style>
 
 <template>
+  <section class="bg-autumn-texture bg-cover w-full h-screen min-h-screen fixed inset-0 grid place-items-center z-50 bg-blue-200" id="opening">
+      <div class="w-6/12 text-center text-xs md:text-lg lg:text-xl">
+        <div class="mt-5 animate__animated animate__zoomInUp">
+          <h1 class="kalam-font font-semibold text-5xl lg:text-6xl my-5 text-amber-800">Silvia &amp; Claudio</h1>
+          <p class="kalam-font text-amber-800 font-medium text-lg">We Are Getting Married</p>
+          <p class="font-medium text-amber-800">Sabtu, 29 Juli 2023</p>
+          <button type="buton" class="w-10/12 md:w-8/12 text-sm md-text-lg mt-6 font-medium z-50 border border-amber-800 text-gray-100 bg-amber-500 p-2 rounded-full pointer active:scale-90 hover:bg-amber-500 hover:text-gray-100 duration-300" @click="openInvitation">
+            <i class="fa-solid fa-book-open mr-1" ></i> Buka undangan </button>
+        </div>
+      </div>
+  </section>
   <audio ref="audioEl" autoplay>
     <source src="@/assets/audio/backsound.mp3" type="audio/mp3">
   </audio>
@@ -38,6 +71,12 @@ const isAudioPlay = computed(() => state.isAudioPlay)
 const audioClick = () => isPlayed.value = !isPlayed.value
 const audioAction = () => isPlayed.value ? audioEl.value.play() : audioEl.value.pause()
 const control = () => {
+  audioClick()
+  audioAction()
+}
+
+const openInvitation = () => {
+  document.querySelector('#opening').classList.add("close-page")
   audioClick()
   audioAction()
 }
