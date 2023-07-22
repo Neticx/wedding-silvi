@@ -3,7 +3,7 @@
     <p>Ada {{ messages.length }} pesan dari para tamu</p>
   </section>
   <section style="max-height: 400px" class="w-10/12 mt-5 mx-auto overflow-scroll">
-    <template v-for="(msg, x) in messages" :key="x">
+    <template v-for="(msg, x) in messages">
       <div class="w-full mb-5 border-b-2 border-green-200 pb-1">
         <span class="flex gap-2 items-center">
           <p class="kalam-font text-green-500 text-xl">{{ msg.guestName }}</p>

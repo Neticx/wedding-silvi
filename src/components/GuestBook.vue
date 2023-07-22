@@ -59,7 +59,7 @@ input, textarea, select, option {
       <!-- Gift Section -->
       <Gift></Gift>
       <!-- Message Box -->
-      <MessagesBox></MessagesBox>
+      <MessagesBox :key="x"></MessagesBox>
       <!-- Frames -->
       <div class="w-full text-center pb-12 mt-12">
         <p class="text-sm text-amber-600 font-medium">NusaInvitation &copy; 2023</p>
@@ -88,6 +88,8 @@ const GuestStatus = ref('Hadir')
 const statusResponse = ref(false)
 const showAlert = ref(false)
 
+const x = ref(0)
+
 //URL
 const sendMessage = ( evt ) => {
   evt.preventDefault()
@@ -99,6 +101,7 @@ const sendMessage = ( evt ) => {
     const asString = new URLSearchParams(formData).toString();
     axios.get('https://script.google.com/macros/s/AKfycbz6ClD5JDTcHGw8s4dz6iJ1a8viS_jhR1buMnfMgFc61yST22Mi_AGum_88-9OVLYksFg/exec?action=insert&'+asString)
     .then( res => {
+        x.value += 1
         statusResponse.value = true
         showAlert.value = true
     } )
