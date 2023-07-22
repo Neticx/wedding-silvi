@@ -28,7 +28,7 @@ const props = defineProps({
 
 const messages = ref([])
 onMounted(() => {
-  axios.get('https://script.google.com/macros/s/AKfycbwcm-hYkRAzjHP4zWLsSIwlbaTJ_LmvjTFCYmwJEHoKcBWSZ8sUe0GzPVu0fRgtwGS0OA/exec')
+  axios.get('https://script.google.com/macros/s/AKfycbz6ClD5JDTcHGw8s4dz6iJ1a8viS_jhR1buMnfMgFc61yST22Mi_AGum_88-9OVLYksFg/exec?action=get')
     .then( res => {
       console.log(res.data)
       messages.value = res.data

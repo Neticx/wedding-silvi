@@ -89,26 +89,23 @@ const statusResponse = ref(false)
 const showAlert = ref(false)
 
 //URL
-const scriptURL = "https://script.google.com/macros/s/AKfycbxBbmsUu1Xn37-arXLPIKwkiRKwsb2ZoM4yYoUneCaC9TAoPtJk4m9WVOq5NxmM3bE-BQ/exec"
 const sendMessage = ( evt ) => {
   evt.preventDefault()
   
   setTimeout( () => {
     // Post form
  
-    fetch(scriptURL, { method: 'POST', body: new FormData(form.value), headers: {
-      'Access-Control-Allow-Origin' : 'https://script.google.com',
-        }, redirect: "follow"})
-      .then( res => {
-        console.log('Success: ', res)
+    const formData = new FormData(form.value);
+    const asString = new URLSearchParams(formData).toString();
+    axios.get('https://script.google.com/macros/s/AKfycbz6ClD5JDTcHGw8s4dz6iJ1a8viS_jhR1buMnfMgFc61yST22Mi_AGum_88-9OVLYksFg/exec?action=insert&'+asString)
+    .then( res => {
         statusResponse.value = true
         showAlert.value = true
-       })
-      .catch( err => {
-        console.log('Error: ', err)
+    } )
+    .catch( err => {
         statusResponse.value = false
         showAlert.value = true
-      })
+    } )
   }, 500)
 }
 
