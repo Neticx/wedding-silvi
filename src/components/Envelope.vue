@@ -23,16 +23,9 @@ import Clipboard from '@/components/Clipboard.vue'
 const wallets = [
   {
     thumb: 'wallets/bca.png',
-    platform: 'Mandiri',
-    name: 'Silvia Rizky Ramadanti',
-    number: '6565142350',
-    prefix: 'rekening'
-  },
-  {
-    thumb: 'wallets/bca.png',
-    platform: 'Mandiri',
-    name: 'Krissonmanie Claudio Wijaya',
-    number: '7640282171',
+    platform: 'BCA',
+    name: 'Riki Hidayat',
+    number: '7111842047',
     prefix: 'rekening'
   }
 ]

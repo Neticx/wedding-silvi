@@ -23,7 +23,7 @@ input, textarea, select, option {
     <section class="container-section bg-blue-100">
       <HeaderSection title="Buku Tamu" subtitle="Demi kelancaran acara dimohon untuk para tamu undangan untuk memastikan kehadirannya pada acara kami" />
       <!-- Form -->
-      <form 
+      <form id="form-guest"
         ref="form"
         @submit="sendMessage"
         class="w-10/12 mx-auto mt-6">

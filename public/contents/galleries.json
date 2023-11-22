@@ -1,13 +1,13 @@
 {
 	"galleries": [
-		"galleries/image-2.jpg",
-		"galleries/image-5.jpg",
-		"galleries/image-7.jpg",
-		"galleries/image-3.jpg",
-		"galleries/image-4.jpg",
-		"galleries/image-6.jpg",
-		"galleries/image-8.jpg",
-		"galleries/image-10.jpg",
-		"galleries/image-12.jpg"
+		"galleries/image_1.webp",
+		"galleries/image_2.webp",
+		"galleries/image_7.webp",
+		"galleries/image_5.webp",
+		"galleries/image_4.webp",
+		"galleries/image_11.webp",
+		"galleries/image_8.webp",
+		"galleries/image_9.webp",
+		"galleries/image_10.webp"
 	]
 }

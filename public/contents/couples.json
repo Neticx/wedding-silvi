@@ -1,22 +1,18 @@
 {
 	"couples": [
 		{
-			"name": "Silvia Rizki Ramadanti",
-			"sosmed": [
-				{ "icon": "fab fa-instagram", "link": "https://instagram.com/sillviarizki" }
-			],
-			"parents": ["Drs. H. Madsuki ", "Hj. Sukarsih"],
-			"thumb": "/couples/female.png",
-			"address": "Kp Kalapa Rt. 003 / 007 Kec. Sindang Jaya Kab. Tangerang"
+			"name": "Siti Romunah / Munah",
+			"sosmed": [],
+			"parents": ["Rape'i ", "Nursiah/Ciah"],
+			"thumb": "/couples/female.jpg",
+			"address": "Kp Rengkod Rt. 015 / 007 Ds. Jayanti Kec. Jayanti Kab. Tangerang"
 		},
 		{
-			"name": "Briptu K. M. Claudio Wijaya Putra",
-			"sosmed": [
-				{ "icon": "fab fa-instagram", "link": "https://instagram.com/oid.wp" }
-			],
-			"parents": ["Topan E Wijaya Kusuma", "Ernasari Kusumaningsih"],
-			"thumb": "/couples/male.png",
-			"address": "Kp. Namprak RT 01/04 Ds. Bantar Panjang Kec. Tigaraksa Kab. Tangerang"
+			"name": "Riki Hidayat / Riki",
+			"sosmed": [],
+			"parents": ["Aang Hidayat", "Asnidar/Upi"],
+			"thumb": "/couples/male.jpg",
+			"address": "Kp. Sukabakti Ds. Gembong Kec. Balaraja Kab. Tangerang"
 		}
 	]
 }
