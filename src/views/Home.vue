@@ -5,7 +5,7 @@
     <GroomBride></GroomBride>
     <Timelines v-on:goToGuestBook="navigationHandler('#guest-book')"></Timelines>
     <OurGallery></OurGallery>
-    <Filter></Filter>
+<!--    <Filter></Filter>-->
     <Envelope id="envelope"></Envelope>
     <GuestBook id="guest-book"></GuestBook>
   </section>
