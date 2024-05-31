@@ -1,7 +1,7 @@
 <template>
-  <section class="w-full bg-blue-100 pt-12 pb-5">
+  <section class="w-full bg-gray-700 pt-12 pb-5">
     <section class="section-container">
-      <HeaderSection title="Wedding Gift" subtitle=" Doa restu anda merupakan karunia yang sangat berarti bagi kami dan jika memberi adalah ungkapan tanda terima kasih anda, anda dapat memberi kado secara cashless"></HeaderSection>
+      <HeaderSection title="Wedding Gift" text-color="text-gray-100" subtitle=" Doa restu anda merupakan karunia yang sangat berarti bagi kami dan jika memberi adalah ungkapan tanda terima kasih anda, anda dapat memberi kado secara cashless"></HeaderSection>
       <section class="">
         <template v-for="(wallet, x) in wallets" :key="x">
           <div data-aos="zoom-in" class="w-8/12 text-center border border-gray-200 mx-auto p-5 mb-5 bg-gray-100 shadow-lg rounded-tl-3xl rounded-br-3xl">
@@ -24,8 +24,15 @@ const wallets = [
   {
     thumb: 'wallets/bca.png',
     platform: 'BCA',
-    name: 'Riki Hidayat',
-    number: '7111842047',
+    name: 'MOHAMAD SAMSUL JAMALUDIN',
+    number: '7111395725',
+    prefix: 'rekening'
+  },
+  {
+    thumb: 'wallets/mandiri.png',
+    platform: 'Mandiri',
+    name: 'SITI SUNIAH',
+    number: '1550010773532',
     prefix: 'rekening'
   }
 ]

@@ -2,7 +2,7 @@
   <section class="w-full bg-couples bg-cover bg-center h-screen">
     <section class="container-section h-screen grid content-end">
       <div 
-        class="animate__animated animate__fadeInUpBig text-gray-100 text-center bg-blue-300 bg-opacity-80 backdrop-blur-sm rounded-t-3xl px-6 py-10">
+        class="animate__animated animate__fadeInUpBig text-gray-100 text-center bg-gray-500 bg-opacity-80 backdrop-blur-sm rounded-t-3xl px-6 py-10">
         <p>Pernikahan</p>
         <h1 class="tangerine-font text-title font-bold">{{ couples.join(' & ') }}</h1>
         <decoration class="fill-white mx-auto w-3/12 mb-3"></decoration>
@@ -22,7 +22,7 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import decoration from '@/assets/svg/decoration-2.svg'
 
-const couples = ['Munah', 'Riki']
+const couples = ['Niah', 'Jamal']
 
 const route = useRoute()
 let query = computed(() => route.query)

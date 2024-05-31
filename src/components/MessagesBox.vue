@@ -7,10 +7,10 @@
       <div class="w-full mb-5 border-b-2 border-green-200 pb-1">
         <span class="flex gap-2 items-center">
           <p class="kalam-font text-green-500 text-xl">{{ msg.guestName }}</p>
-          <span class="py-1 px-2 bg-gray-600 text-gray-100 rounded-lg text-xxs">{{ msg.guestStatus ? 'Hadir' : 'Tidak Hadir' }}</span>
+          <span class="py-1 px-2 bg-gray-600 text-white rounded-lg text-xxs">{{ msg.guestStatus}}</span>
         </span>
-        <p class="font-medium text-xs mt-2">Pada {{ msg.timestamp }}</p>
-        <p class="text-sm">{{ msg.guestMessage }}</p>
+        <p class="font-medium text-xs mt-2 text-amber-400">Pada {{ formattedTimestamp(msg.timestamp) }}</p>
+        <p class="text-sm text-white">{{ msg.guestMessage }}</p>
       </div>
     </template>
   </section>
@@ -18,7 +18,7 @@
 
 <script setup>
 import axios from 'axios'
-import { ref, onMounted } from 'vue'
+import {ref, onMounted, computed} from 'vue'
 
 const props = defineProps({
   messages: {
@@ -35,5 +35,19 @@ onMounted(() => {
     } )
     .catch( err => alert(err) )
 })
+
+const formattedTimestamp = computed(() => (timestamp) => {
+  const dateObject = new Date(timestamp);
+  // Choose your formatting options (e.g., 'YYYY-MM-DD HH:mm')
+  const formattedTime = dateObject.toLocaleString('en-US', {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false
+  });
+  return formattedTime;
+});
 
 </script>

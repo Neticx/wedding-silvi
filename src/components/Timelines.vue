@@ -7,12 +7,12 @@
 </style>
 
 <template>
-  <section class="w-full bg-gradient-to-b from-sky-200 to-blue-200">
+  <section class="w-full bg-gradient-to-b from-gray-500 to-gray-700">
     <section class="container-section pb-12">
       <HeaderSection text-color="text-gray-100" subtitle="Dengan tidak mengurangi rasa hormat, kami mengajak para tamu undangan agar bisa berhadir pada serangkaian acara kami" title="Runtutan Acara"></HeaderSection>
       <Card>
         <template v-slot:body>
-          <div class="bg-blue-300 px-6 py-8 text-center text-sm font-medium" v-for="(timeline, index) in timelines" :key="index">
+          <div class="bg-black px-6 py-8 text-center text-sm font-medium" v-for="(timeline, index) in timelines" :key="index">
             <section data-aos="fade-up">
               <h1 class="text-xl satisfy-font text-white">{{ timeline.title }}</h1>
               <p class="font-medium text-gray-100">{{ timeline.date }} | {{ timeline.time }}</p>
@@ -28,7 +28,7 @@
           </div>
         </template>
         <template v-slot:footer>
-          <section class="bg-blue-300">
+          <section class="bg-black">
             <Countdown></Countdown>
             <!-- Button to Guest Book -->
             <div class="px-6 pt-5 pb-8 text-center">

@@ -1,18 +1,18 @@
 {
 	"couples": [
 		{
-			"name": "Siti Romunah / Munah",
+			"name": "Siti Suniah / Niah",
 			"sosmed": [],
-			"parents": ["Rape'i ", "Nursiah/Ciah"],
-			"thumb": "/couples/female.jpg",
-			"address": "Kp Rengkod Rt. 015 / 007 Ds. Jayanti Kec. Jayanti Kab. Tangerang"
+			"parents": ["Sana'an(Alm) ", "Jubaedah"],
+			"thumb": "/couples/female-self.png",
+			"address": "Kp Bojong RT 001/001 Ds. Pasir Ampo Kec. Kresek Kab. Tangerang"
 		},
 		{
-			"name": "Riki Hidayat / Riki",
+			"name": "M. Samsul Jamaludin / Jamal",
 			"sosmed": [],
-			"parents": ["Aang Hidayat", "Asnidar/Upi"],
-			"thumb": "/couples/male.jpg",
-			"address": "Kp. Sukabakti Ds. Gembong Kec. Balaraja Kab. Tangerang"
+			"parents": ["Rozak", "Nursadah"],
+			"thumb": "/couples/male-self.png",
+			"address": "Kp Bojong RT 002/001 Ds. Pasir Ampo Kec. Kresek Kab. Tangerang"
 		}
 	]
 }

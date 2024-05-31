@@ -19,9 +19,9 @@ input, textarea, select, option {
 </style>
 
 <template>
-  <section class="w-full bg-blue-100 pt-5">
-    <section class="container-section bg-blue-100">
-      <HeaderSection title="Buku Tamu" subtitle="Demi kelancaran acara dimohon untuk para tamu undangan untuk memastikan kehadirannya pada acara kami" />
+  <section class="w-full bg-gray-100">
+    <section class="container-section bg-gray-700">
+      <HeaderSection title="Buku Tamu" text-color="text-white" subtitle="Demi kelancaran acara dimohon untuk para tamu undangan untuk memastikan kehadirannya pada acara kami" />
       <!-- Form -->
       <form id="form-guest"
         ref="form"

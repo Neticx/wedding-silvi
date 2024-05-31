@@ -4,7 +4,7 @@
     <!-- <FirstSight></FirstSight> -->
     <GroomBride></GroomBride>
     <Timelines v-on:goToGuestBook="navigationHandler('#guest-book')"></Timelines>
-    <OurGallery></OurGallery>
+<!--    <OurGallery></OurGallery>-->
 <!--    <Filter></Filter>-->
     <Envelope id="envelope"></Envelope>
     <GuestBook id="guest-book"></GuestBook>
