@@ -19,7 +19,7 @@
               <decoration class="w-2/12 mx-auto my-2 fill-white"></decoration>
               <p class="text-white">{{ timeline.location }}</p>
               <p class="text-gray-200">{{ timeline.address }}</p>
-              <a class="btn" href="https://goo.gl/maps/xNhgoQb9uYTEjVmi7">
+              <a class="btn" target="_blank" href="https://maps.app.goo.gl/CpqCu7vPaMQb5kUr6">
                 <i class="fa-solid fa-map"></i>
                 Lihat Peta
               </a>
@@ -38,7 +38,7 @@
                 Konfirmasi
               </button>
             </div>
-            <img src="@/assets/images/image-7.jpg" alt="">
+            <img src="@/assets/images/img-7.webp" alt="">
           </section>
         </template>
       </Card>

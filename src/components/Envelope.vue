@@ -22,18 +22,25 @@ import Clipboard from '@/components/Clipboard.vue'
 
 const wallets = [
   {
-    thumb: 'wallets/bca.png',
-    platform: 'Mandiri',
-    name: 'Silvia Rizky Ramadanti',
-    number: '6565142350',
+    thumb: 'wallets/bri.png',
+    platform: 'BRI',
+    name: 'Iin Sri Wahyuni',
+    number: '043701070967504',
     prefix: 'rekening'
   },
   {
-    thumb: 'wallets/bca.png',
-    platform: 'Mandiri',
-    name: 'Krissonmanie Claudio Wijaya',
-    number: '7640282171',
+    thumb: 'wallets/btn.png',
+    platform: 'BTN',
+    name: 'Iin Sri Wahyuni',
+    number: '117901500005215',
     prefix: 'rekening'
+  },
+  {
+    thumb: 'wallets/dana.png',
+    platform: 'Dana',
+    name: 'Iin Sri Wahyuni',
+    number: '088808795735 ',
+    prefix: 'e-wallet'
   }
 ]
 </script>

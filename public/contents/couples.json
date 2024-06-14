@@ -1,22 +1,22 @@
 {
 	"couples": [
 		{
-			"name": "Silvia Rizki Ramadanti",
+			"name": "Iin Sri Wahyuni",
 			"sosmed": [
-				{ "icon": "fab fa-instagram", "link": "https://instagram.com/sillviarizki" }
+				{ "icon": "fab fa-instagram", "link": "https://instagram.com/insriwww__" }
 			],
-			"parents": ["Drs. H. Madsuki ", "Hj. Sukarsih"],
-			"thumb": "/couples/female.png",
-			"address": "Kp Kalapa Rt. 003 / 007 Kec. Sindang Jaya Kab. Tangerang"
+			"parents": ["Jamaksari (alm) ", "Atikah (Atik)"],
+			"thumb": "/couples/female.webp",
+			"address": "Kp Andil RT 004/001, Desa Talok, Kec. Kresek, Kab. Tangerang, Banten"
 		},
 		{
-			"name": "Briptu K. M. Claudio Wijaya Putra",
+			"name": "Aditio Suharjo",
 			"sosmed": [
-				{ "icon": "fab fa-instagram", "link": "https://instagram.com/oid.wp" }
+				{ "icon": "fab fa-instagram", "link": "https://instagram.com/" }
 			],
-			"parents": ["Topan E Wijaya Kusuma", "Ernasari Kusumaningsih"],
-			"thumb": "/couples/male.png",
-			"address": "Kp. Namprak RT 01/04 Ds. Bantar Panjang Kec. Tigaraksa Kab. Tangerang"
+			"parents": ["Suhari", "Mariah"],
+			"thumb": "/couples/male.webp",
+			"address": "Cilegon - Banten"
 		}
 	]
 }

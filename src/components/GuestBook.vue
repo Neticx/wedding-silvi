@@ -47,7 +47,6 @@ input, textarea, select, option {
           <label for="GuestMessage">Pesan</label>
           <textarea placeholder="Tuliskan pesan anda disini" v-model="GuestMessage" name="GuestMessage" id="GuestMessage" cols="30" rows="5" required></textarea>
         </div>
-        {{ query }}
         <!-- Submit -->
         <button 
           data-aos="zoom-in"
@@ -99,7 +98,7 @@ const sendMessage = ( evt ) => {
  
     const formData = new FormData(form.value);
     const asString = new URLSearchParams(formData).toString();
-    axios.get('https://script.google.com/macros/s/AKfycbz6ClD5JDTcHGw8s4dz6iJ1a8viS_jhR1buMnfMgFc61yST22Mi_AGum_88-9OVLYksFg/exec?action=insert&'+asString)
+    axios.get('https://script.google.com/macros/s/AKfycbwuRt1qwsk6zwVnvgMCgQEOvtWOaCR2AuOhL7iuG3DmQ0QOoG0KWr5jxhkd7T-i2k_Lhw/exec?sheet=Iin&action=insert&'+asString)
     .then( res => {
         x.value += 1
         statusResponse.value = true

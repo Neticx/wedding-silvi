@@ -1,7 +1,11 @@
 <template>
   <section class="container-section bg-blue-100">
-    <HeaderSection title="Video Singkat Kami" subtitle="A simple 'I love you' means more than money."/> 
-    <VueVideoPlayer data-aos="zoom-in" class="w-10/12 mx-auto" :src="source" autoplay/>
+    <HeaderSection title="Video Singkat Kami" subtitle="A simple 'I love you' means more than money."/>
+    <div class="player-container">
+      <vue3-video-player src="src/assets/video/video.mp4" autoplay></vue3-video-player>
+    </div>
+
+
   </section>
 </template>
 
@@ -10,6 +14,6 @@
 import VueVideoPlayer from 'vue3-player-video'
 import HeaderSection from '@/components/HeaderSection.vue'
 
-const source = 'https://drive.google.com/uc?export=download&id=1xC6VmQowPcv059FW0JnZY4rTzzsBuFZj'
+const source = 'src/assets/video/video.mp4'
 
 </script>
