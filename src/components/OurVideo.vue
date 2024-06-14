@@ -2,9 +2,8 @@
   <section class="container-section bg-blue-100">
     <HeaderSection title="Video Singkat Kami" subtitle="A simple 'I love you' means more than money."/>
     <div class="player-container">
-      <vue3-video-player src="@/assets/video/video.mp4" autoplay></vue3-video-player>
+      <vue3-video-player src="https://d9id1jbq8or6e.cloudfront.net/assets/courses/video.mp4" autoplay></vue3-video-player>
     </div>
-
 
   </section>
 </template>
