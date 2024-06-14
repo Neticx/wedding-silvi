@@ -1,7 +1,7 @@
 <template>
-  <section class="w-full bg-slate-100 pt-12 pb-5">
+  <section class="w-full bg-blue-100 pt-12 pb-5">
     <section class="section-container">
-      <HeaderSection title="Amplop Digital" subtitle=" Doa restu anda merupakan karunia yang sangat berarti bagi kami dan jika memberi adalah ungkapan tanda terima kasih anda, anda dapat memberi kado secara cashless"></HeaderSection>
+      <HeaderSection title="Wedding Gift" subtitle=" Doa restu anda merupakan karunia yang sangat berarti bagi kami dan jika memberi adalah ungkapan tanda terima kasih anda, anda dapat memberi kado secara cashless"></HeaderSection>
       <section class="">
         <template v-for="(wallet, x) in wallets" :key="x">
           <div data-aos="zoom-in" class="w-8/12 text-center border border-gray-200 mx-auto p-5 mb-5 bg-gray-100 shadow-lg rounded-tl-3xl rounded-br-3xl">
@@ -22,18 +22,25 @@ import Clipboard from '@/components/Clipboard.vue'
 
 const wallets = [
   {
-    thumb: 'wallets/mandiri.png',
-    platform: 'Mandiri',
-    name: 'Fulanah',
-    number: '0004389203902',
+    thumb: 'wallets/bri.png',
+    platform: 'BRI',
+    name: 'Iin Sri Wahyuni',
+    number: '043701070967504',
     prefix: 'rekening'
   },
   {
-    thumb: 'wallets/mandiri.png',
-    platform: 'Mandiri',
-    name: 'Fulanah',
-    number: '8843439001940',
+    thumb: 'wallets/btn.png',
+    platform: 'BTN',
+    name: 'Iin Sri Wahyuni',
+    number: '117901500005215',
     prefix: 'rekening'
+  },
+  {
+    thumb: 'wallets/dana.png',
+    platform: 'Dana',
+    name: 'Iin Sri Wahyuni',
+    number: '088808795735 ',
+    prefix: 'e-wallet'
   }
 ]
 </script>

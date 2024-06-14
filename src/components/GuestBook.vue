@@ -19,8 +19,8 @@ input, textarea, select, option {
 </style>
 
 <template>
-  <section class="w-full bg-slate-100 pt-5">
-    <section class="container-section bg-slate-100">
+  <section class="w-full bg-blue-100 pt-5">
+    <section class="container-section bg-blue-100">
       <HeaderSection title="Buku Tamu" subtitle="Demi kelancaran acara dimohon untuk para tamu undangan untuk memastikan kehadirannya pada acara kami" />
       <!-- Form -->
       <form 
@@ -47,7 +47,6 @@ input, textarea, select, option {
           <label for="GuestMessage">Pesan</label>
           <textarea placeholder="Tuliskan pesan anda disini" v-model="GuestMessage" name="GuestMessage" id="GuestMessage" cols="30" rows="5" required></textarea>
         </div>
-        {{ query }}
         <!-- Submit -->
         <button 
           data-aos="zoom-in"
@@ -59,10 +58,10 @@ input, textarea, select, option {
       <!-- Gift Section -->
       <Gift></Gift>
       <!-- Message Box -->
-      <!-- <MessagesBox :messages="messages"></MessagesBox> -->
+      <MessagesBox :key="x"></MessagesBox>
       <!-- Frames -->
       <div class="w-full text-center pb-12 mt-12">
-        <p class="text-sm text-amber-600 font-medium">NusaInvitation &copy; 2022</p>
+        <p class="text-sm text-amber-600 font-medium">NusaInvitation &copy; 2023</p>
       </div>
     </section>
   </section>
@@ -76,7 +75,7 @@ import axios from 'axios'
 import HeaderSection from '@/components/HeaderSection.vue'
 import Alert from '@/components/Alert.vue'
 // import Gift from '@/components/Gift.vue'
-// import MessagesBox from '@/components/MessagesBox.vue'
+import MessagesBox from '@/components/MessagesBox.vue'
 
 // Form handler
 const form = ref(null)
@@ -88,24 +87,27 @@ const GuestStatus = ref('Hadir')
 const statusResponse = ref(false)
 const showAlert = ref(false)
 
+const x = ref(0)
+
 //URL
-const scriptURL = "https://script.google.com/macros/s/AKfycbzPgWJ7760OwwRlvjhrBMSM9HTVJL2wjDnDB3Up9ZOEIm09LMBwpmSpkQ6eGjAPGPCH/exec"
 const sendMessage = ( evt ) => {
   evt.preventDefault()
   
   setTimeout( () => {
     // Post form
-    fetch(scriptURL, { method: 'POST', body: new FormData(form.value)})
-      .then( res => {
-        console.log('Success: ', res)
+ 
+    const formData = new FormData(form.value);
+    const asString = new URLSearchParams(formData).toString();
+    axios.get('https://script.google.com/macros/s/AKfycbwuRt1qwsk6zwVnvgMCgQEOvtWOaCR2AuOhL7iuG3DmQ0QOoG0KWr5jxhkd7T-i2k_Lhw/exec?sheet=Iin&action=insert&'+asString)
+    .then( res => {
+        x.value += 1
         statusResponse.value = true
         showAlert.value = true
-       })
-      .catch( err => {
-        console.log('Error: ', err)
+    } )
+    .catch( err => {
         statusResponse.value = false
         showAlert.value = true
-      })
+    } )
   }, 500)
 }
 

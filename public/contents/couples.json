@@ -1,26 +1,22 @@
 {
 	"couples": [
 		{
-			"name": "Silvia Rizki Ramadanti",
+			"name": "Iin Sri Wahyuni",
 			"sosmed": [
-				{ "icon": "fab fa-instagram", "link": "http://fake.com" },
-				{ "icon": "fab fa-facebook", "link": "http://fake.com" },
-				{ "icon": "fab fa-twitter", "link": "http://fake.com" }
+				{ "icon": "fab fa-instagram", "link": "https://instagram.com/insriwww__" }
 			],
-			"parents": ["H. Madsuki ", "Hj. Sukarsih"],
-			"thumb": "/couples/couple-female.png",
-			"address": "Kampoeng Kalapa Rt. 003 / 007 Balaraja"
+			"parents": ["Jamaksari (alm) ", "Atikah (Atik)"],
+			"thumb": "/couples/female.webp",
+			"address": "Kp Andil RT 004/001, Desa Talok, Kec. Kresek, Kab. Tangerang, Banten"
 		},
 		{
-			"name": "Krisson Manie Claudio W.P.",
+			"name": "Aditio Suharjo",
 			"sosmed": [
-				{ "icon": "fab fa-instagram", "link": "http://fake.com" },
-				{ "icon": "fab fa-facebook", "link": "http://fake.com" },
-				{ "icon": "fab fa-twitter", "link": "http://fake.com" }
+				{ "icon": "fab fa-instagram", "link": "https://instagram.com/" }
 			],
-			"parents": ["Topan E Wijaya Kusuma ", "Ernasari Kurnianingsih"],
-			"thumb": "/couples/couple-male.png",
-			"address": "Komplek Setia Budi Sentosa Blok 12A Nomor 6 Gang Serunai Asri - Brebes, Jawa Timur"
+			"parents": ["Suhari", "Mariah"],
+			"thumb": "/couples/male.webp",
+			"address": "Cilegon - Banten"
 		}
 	]
 }

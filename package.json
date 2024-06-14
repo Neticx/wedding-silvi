@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@cloudgeek/vue3-video-player": "^0.3.10",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.7",
@@ -19,6 +20,7 @@
     "v-viewer": "^3.0.10",
     "vite-svg-loader": "^3.3.0",
     "vue": "^3.2.25",
+    "vue-core-video-player": "^0.2.0",
     "vue-router": "^4.0.14",
     "vue3-player-video": "^1.2.5"
   },
