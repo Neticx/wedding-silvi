@@ -19,8 +19,8 @@ input, textarea, select, option {
 </style>
 
 <template>
-  <section class="w-full bg-blue-100 pt-5">
-    <section class="container-section bg-blue-100">
+  <section class="w-full bg-[#00674f] pt-5">
+    <section class="container-section bg-[#00674f]">
       <HeaderSection title="Buku Tamu" subtitle="Demi kelancaran acara dimohon untuk para tamu undangan untuk memastikan kehadirannya pada acara kami" />
       <!-- Form -->
       <form 
@@ -61,7 +61,7 @@ input, textarea, select, option {
       <MessagesBox :key="x"></MessagesBox>
       <!-- Frames -->
       <div class="w-full text-center pb-12 mt-12">
-        <p class="text-sm text-amber-600 font-medium">NusaInvitation &copy; 2023</p>
+        <p class="text-sm text-amber-600 font-medium">NusaInvitation &copy; 2025</p>
       </div>
     </section>
   </section>
@@ -98,7 +98,7 @@ const sendMessage = ( evt ) => {
  
     const formData = new FormData(form.value);
     const asString = new URLSearchParams(formData).toString();
-    axios.get('https://script.google.com/macros/s/AKfycbwuRt1qwsk6zwVnvgMCgQEOvtWOaCR2AuOhL7iuG3DmQ0QOoG0KWr5jxhkd7T-i2k_Lhw/exec?sheet=Iin&action=insert&'+asString)
+    axios.get('https://script.google.com/macros/s/AKfycbxkjVlzBdUANCgRd9maHsVhW7MTbX5ftUuxdJjgozx8uyrVxKzPndE7OtVSVpymQClJVQ/exec?sheet=Aldi&action=insert&'+asString)
     .then( res => {
         x.value += 1
         statusResponse.value = true

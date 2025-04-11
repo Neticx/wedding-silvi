@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full bg-blue-100">
+  <section class="w-full bg-[#00674f]">
     <section class="w-full px-0">
       <viewer :images="galleries">
         <div class="flex flex-wrap">
@@ -14,7 +14,7 @@
       <!-- Our Story -->
       <!-- <OurStory class="mt-10"></OurStory> -->
       <!-- Our Video -->
-      <OurVideo class="mt-10"></OurVideo>
+<!--      <OurVideo class="mt-10"></OurVideo>-->
     </section>
   </section>
 </template>

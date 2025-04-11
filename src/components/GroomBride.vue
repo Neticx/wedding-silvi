@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full bg-gradient-to-b from-blue-300 to-sky-200">
+  <section class="w-full bg-gradient-to-b from-[#00674f] to-green-300">
     <wave class="fill-white" />
     <section class="container-section">
       <HeaderSection text-color="text-gray-100" title="Mempelai Pria dan Wanita" subtitle="Ya Allah dengan mengharap ridho dan karunia-Mu, Izinkanlah kami mempersatukan dua insan dari dua keluarga ini agar menjadi pasangan yang selalu mendapakan rahmat-Mu" />

@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full bg-blue-100 pt-12 pb-5">
+  <section class="w-full bg-[#00674f] pt-12 pb-5">
     <section class="section-container">
       <HeaderSection title="Wedding Gift" subtitle=" Doa restu anda merupakan karunia yang sangat berarti bagi kami dan jika memberi adalah ungkapan tanda terima kasih anda, anda dapat memberi kado secara cashless"></HeaderSection>
       <section class="">
@@ -22,25 +22,18 @@ import Clipboard from '@/components/Clipboard.vue'
 
 const wallets = [
   {
-    thumb: 'wallets/bri.png',
-    platform: 'BRI',
-    name: 'Iin Sri Wahyuni',
-    number: '043701070967504',
+    thumb: 'wallets/mandiri.png',
+    platform: 'Mandiri',
+    name: 'AYU PUSPITA SARI',
+    number: '1550011615484',
     prefix: 'rekening'
   },
   {
-    thumb: 'wallets/btn.png',
-    platform: 'BTN',
-    name: 'Iin Sri Wahyuni',
-    number: '117901500005215',
+    thumb: 'wallets/bca.png',
+    platform: 'BCA',
+    name: 'ALDI FERDIANSYAH',
+    number: '6041719301',
     prefix: 'rekening'
-  },
-  {
-    thumb: 'wallets/dana.png',
-    platform: 'Dana',
-    name: 'Iin Sri Wahyuni',
-    number: '088808795735 ',
-    prefix: 'e-wallet'
   }
 ]
 </script>

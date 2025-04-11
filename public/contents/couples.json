@@ -1,22 +1,22 @@
 {
 	"couples": [
 		{
-			"name": "Iin Sri Wahyuni",
+			"name": "Ayu Puspita Sari, S.H",
 			"sosmed": [
-				{ "icon": "fab fa-instagram", "link": "https://instagram.com/insriwww__" }
+				{ "icon": "fab fa-instagram", "link": "https://instagram.com/yupuspiit" }
 			],
-			"parents": ["Jamaksari (alm) ", "Atikah (Atik)"],
-			"thumb": "/couples/female.webp",
-			"address": "Kp Andil RT 004/001, Desa Talok, Kec. Kresek, Kab. Tangerang, Banten"
+			"parents": ["Mulyono", "Tarmini"],
+			"thumb": "/couples/couple-female.webp",
+			"address": "Desa Jembangan RT 03/03, Kel. Kaling, Kec. Tasikmadu, Kab. Karanganyar (Solo, Jawa Tengah)"
 		},
 		{
-			"name": "Aditio Suharjo",
+			"name": "Aldi Ferdiansyah, S.T",
 			"sosmed": [
-				{ "icon": "fab fa-instagram", "link": "https://instagram.com/" }
+				{ "icon": "fab fa-instagram", "link": "https://instagram.com/ferdiansyahaldi8" }
 			],
-			"parents": ["Suhari", "Mariah"],
-			"thumb": "/couples/male.webp",
-			"address": "Cilegon - Banten"
+			"parents": ["Lidadi", "Liza Febrianti"],
+			"thumb": "/couples/couple-male.webp",
+			"address": "Kp. Saga RT 01/03 Ds. Saga Kec. Balaraja Kab. Tangerang, Banten"
 		}
 	]
 }

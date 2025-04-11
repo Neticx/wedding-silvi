@@ -1,6 +1,6 @@
 <template>
   <section class="w-10/12 mx-auto mt-6">
-    <p>Ada {{ messages.length }} pesan dari para tamu</p>
+    <p class="text-white">Ada {{ messages.length }} pesan dari para tamu</p>
   </section>
   <section style="max-height: 400px" class="w-10/12 mt-5 mx-auto overflow-scroll">
     <template v-for="(msg, x) in messages">
@@ -28,7 +28,7 @@ const props = defineProps({
 
 const messages = ref([])
 onMounted(() => {
-  axios.get('https://script.google.com/macros/s/AKfycbwuRt1qwsk6zwVnvgMCgQEOvtWOaCR2AuOhL7iuG3DmQ0QOoG0KWr5jxhkd7T-i2k_Lhw/exec?sheet=Iin&action=get')
+  axios.get('https://script.google.com/macros/s/AKfycbxkjVlzBdUANCgRd9maHsVhW7MTbX5ftUuxdJjgozx8uyrVxKzPndE7OtVSVpymQClJVQ/exec?sheet=Aldi&action=get')
     .then( res => {
       messages.value = res.data
     } )
