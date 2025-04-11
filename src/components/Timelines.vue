@@ -19,7 +19,7 @@
               <decoration class="w-2/12 mx-auto my-2 fill-white"></decoration>
               <p class="text-white">{{ timeline.location }}</p>
               <p class="text-gray-200">{{ timeline.address }}</p>
-              <a class="btn" target="_blank" href="https://maps.app.goo.gl/CpqCu7vPaMQb5kUr6">
+              <a class="btn" target="_blank" href="https://maps.app.goo.gl/1P2HU6g8v54KngrZ9">
                 <i class="fa-solid fa-map"></i>
                 Lihat Peta
               </a>
