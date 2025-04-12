@@ -5,6 +5,7 @@
 			"sosmed": [
 				{ "icon": "fab fa-instagram", "link": "https://instagram.com/yupuspiit" }
 			],
+			"as" : "Putri Tunggal",
 			"parents": ["Mulyono", "Tarmini"],
 			"thumb": "/couples/couple-female.webp",
 			"address": "Desa Jembangan RT 03/03, Kel. Kaling, Kec. Tasikmadu, Kab. Karanganyar (Solo, Jawa Tengah)"
@@ -14,6 +15,7 @@
 			"sosmed": [
 				{ "icon": "fab fa-instagram", "link": "https://instagram.com/ferdiansyahaldi8" }
 			],
+			"as" : "Putra Bungsu",
 			"parents": ["Lidadi", "Liza Febrianti"],
 			"thumb": "/couples/couple-male.webp",
 			"address": "Kp. Saga RT 01/03 Ds. Saga Kec. Balaraja Kab. Tangerang, Banten"

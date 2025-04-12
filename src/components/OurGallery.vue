@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full bg-[#00674f]">
+  <section class="w-full bg-black">
     <section class="w-full px-0">
       <viewer :images="galleries">
         <div class="flex flex-wrap">

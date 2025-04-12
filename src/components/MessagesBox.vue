@@ -6,8 +6,16 @@
     <template v-for="(msg, x) in messages">
       <div class="w-full mb-5 border-b-2 border-green-200 pb-1">
         <span class="flex gap-2 items-center">
-          <p class="kalam-font text-green-500 text-xl">{{ msg.guestName }}</p>
-          <span class="py-1 px-2 bg-gray-600 text-gray-100 rounded-lg text-xxs">{{ msg.guestStatus}}</span>
+          <p class="kalam-font text-amber-500 text-xl">{{ msg.guestName }}</p>
+          <span
+              class="py-1 px-2 text-gray-100 rounded-lg text-xxs"
+              :class="{
+                'bg-green-600': msg.guestStatus === 'Hadir',
+                'bg-red-600': msg.guestStatus === 'Tidak Hadir',
+                'bg-gray-600': msg.guestStatus !== 'Hadir' && msg.guestStatus !== 'Tidak Hadir'
+              }">
+          {{ msg.guestStatus }}
+        </span>
         </span>
         <p class="font-medium text-xs mt-2">Pada {{ msg.timestamp }}</p>
         <p class="text-sm">{{ msg.guestMessage }}</p>

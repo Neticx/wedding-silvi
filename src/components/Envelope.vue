@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full bg-[#00674f] pt-12 pb-5">
+  <section class="w-full bg-black pt-12 pb-5">
     <section class="section-container">
       <HeaderSection title="Wedding Gift" subtitle=" Doa restu anda merupakan karunia yang sangat berarti bagi kami dan jika memberi adalah ungkapan tanda terima kasih anda, anda dapat memberi kado secara cashless"></HeaderSection>
       <section class="">
