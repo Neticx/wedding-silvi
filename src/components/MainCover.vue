@@ -2,7 +2,7 @@
   <section class="w-full bg-couples bg-cover h-screen bg-[center_70%]">
     <section class="container-section h-screen grid content-end">
       <div 
-        class="animate__animated animate__fadeInUpBig text-gray-100 text-center bg-black bg-opacity-90 backdrop-blur-sm rounded-t-3xl px-6 py-10">
+        class="animate__animated animate__fadeInUpBig text-gray-100 text-center bg-black bg-opacity-60 backdrop-blur-sm rounded-t-3xl px-6 py-10">
         <p>Pernikahan</p>
         <h1 class="tangerine-font text-title font-bold">{{ couples.join(' & ') }}</h1>
         <decoration class="fill-white mx-auto w-3/12 mb-3"></decoration>
