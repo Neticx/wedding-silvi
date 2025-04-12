@@ -31,16 +31,21 @@
 </style>
 
 <template>
-  <section class="bg-autumn-texture bg-cover w-full h-screen min-h-screen fixed inset-0 grid place-items-center z-50 bg-black" id="opening">
+  <section class="bg-autumn-texture bg-cover bg-[center_70%] w-full h-screen min-h-screen fixed inset-0 grid place-items-center z-50 bg-opening" id="opening">
       <div class="w-6/12 text-center text-xs md:text-lg lg:text-xl">
         <div class="mt-5 animate__animated animate__zoomInUp">
-          <h1 class="kalam-font font-semibold text-5xl lg:text-6xl my-5 text-white">Aldi &amp; Ayu</h1>
-          <p class="kalam-font text-white font-medium text-lg">We Are Getting Married</p>
-          <p class="kalam-font font-medium text-white">Minggu, 20 April 2025</p>
-          <button type="buton" class="w-10/12 md:w-8/12 text-sm md-text-lg mt-6 font-medium z-50 border border-amber-800 text-gray-100 bg-black p-2 rounded-full pointer active:scale-90 hover:bg-gray-400 hover:text-gray-100 duration-300" @click="openInvitation">
-            <i class="fa-solid fa-book-open mr-1" ></i> Buka undangan </button>
-        </div>
+          <h1 class="italic text-2xl lg:text-6xl my-5 text-white">The Wedding of</h1>
+          <h1 class="kalam-font font-semibold text-3xl lg:text-6xl my-5 text-white">Aldi &amp; Ayu</h1>
       </div>
+      </div>
+    <div class="w-6/12 text-center text-xs md:text-lg lg:text-xl">
+      <div class="mt-5 animate__animated animate__zoomInUp">
+        <p class="font-bold text-xl text-white">Kepada YTH</p>
+        <p class="font-bold text-xl text-white">{{ query.to }}</p>
+        <button type="buton" class="w-10/12 md:w-8/12 text-sm md-text-lg mt-6 font-medium z-50 border border-amber-800 text-gray-100 bg-black p-2 rounded-full pointer active:scale-90 hover:bg-gray-400 hover:text-gray-100 duration-300" @click="openInvitation">
+          <i class="fa-solid fa-book-open mr-1" ></i> Buka undangan </button>
+      </div>
+    </div>
   </section>
   <audio ref="audioEl" autoplay>
     <source src="@/assets/audio/backsound.mp3" type="audio/mp3">
@@ -60,6 +65,7 @@
 
 import { ref, computed, watch } from 'vue'
 import { useState } from '@/stores/state.js'
+import {useRoute} from "vue-router";
 
 const state = useState()
 
@@ -84,5 +90,8 @@ const openInvitation = () => {
 watch(isAudioPlay, control)
 
 const giftAction = () => setTimeout(() => { document.querySelector('#envelope').scrollIntoView({ behavior: 'smooth' }) }, 300)
+const route = useRoute()
+let query = computed(() => route.query)
 
+if ( route.query.to === undefined ) query = { to: 'Bapak/Ibu/Saudara/i' }
 </script>

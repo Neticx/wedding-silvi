@@ -5,6 +5,7 @@ module.exports = {
       backgroundImage: {
         "couples": "url('@/assets/images/cover2.webp')",
         "texture": "url('@/assets/textures/paper.png')",
+        "opening": "url('@/assets/images/opening.webp')",
         "prewedding": "url('@/assets/prewedding.jpg')"
       },
       fontSize: {
