@@ -6,19 +6,22 @@
 
 </style>>
 
+
 <template>
+  <SpeedInsights />
   <main class="app">
     <router-view></router-view>
     <!-- Mini Button -->
     <MiniButton></MiniButton>
-  </main> 
-</template> 
+  </main>
+</template>
  
 <script setup>
 
 import AOS from 'aos'
 import { onMounted } from 'vue'
 import MiniButton from '@/components/MiniButton.vue'
+import {SpeedInsights} from '@vercel/speed-insights/vue';
 
 onMounted(() => {
   AOS.init({

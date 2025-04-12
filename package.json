@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@cloudgeek/vue3-video-player": "^0.3.10",
+    "@vercel/speed-insights": "^1.2.0",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.7",
