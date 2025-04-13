@@ -18,7 +18,7 @@
         </span>
         </span>
         <p class="font-medium text-xs mt-2">Pada {{ msg.timestamp }}</p>
-        <p class="text-sm">{{ msg.guestMessage }}</p>
+        <p class="text-sm text-white">{{ msg.guestMessage }}</p>
       </div>
     </template>
   </section>
